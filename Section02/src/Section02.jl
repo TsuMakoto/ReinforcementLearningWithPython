@@ -3,11 +3,10 @@ module Section02
 export Action, State, Node
 
 # Constants
-include("Constants.jl")
+include("constants.jl")
 
 # struct
 include("structs/agent.jl")
-include("structs/logger.jl")
 
 # functions
 include("functions/transit.jl")
