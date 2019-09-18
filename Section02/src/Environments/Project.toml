@@ -2,3 +2,6 @@ name = "Environments"
 uuid = "32e9da7f-b260-4034-b31d-0b2e45cf985a"
 authors = ["Unknown "]
 version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
