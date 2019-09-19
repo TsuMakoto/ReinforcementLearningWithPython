@@ -1,22 +1,3 @@
-actions = [
-          Action(UP, MOVE_UP[1], MOVE_UP[2]),
-          Action(DOWN, MOVE_DOWN[1], MOVE_DOWN[2]),
-          Action(LEFT, MOVE_LEFT[1], MOVE_LEFT[2]),
-          Action(RIGHT, MOVE_RIGHT[1], MOVE_RIGHT[2])
-         ]
-
-
-equal_cell(src::State, dst::State) = src.x == dst.x && src.y == dst.y
-
-state_cell_number(x::Int, y::Int) = (x - 1) + (y - 1) * length(X_RANGE)
-
-state_x_y(cell_number::Int) =
-  cell_number ÷ length(X_RANGE), cell_number / length(X_RANGE)
-
-is_block_cell(state::State) = GRID[state.y, state.x] == BLOCK
-
-is_ordinary_cell(state::State) = GRID[state.y, state.x] == ORDINARY
-
 # child stateを求める
 move(state::State, action::Action)::State = begin
   if !is_ordinary_cell(state)

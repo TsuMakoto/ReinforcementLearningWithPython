@@ -22,6 +22,7 @@ const RIGHT = 2
 const MOVE_RIGHT = (1, 0)
 const LEFT = -2
 const MOVE_LEFT = (-1, 0)
+const DIRS = [UP, DOWN, LEFT, RIGHT]
 const DIRECTIONS = Dict(
                         UP => MOVE_UP,
                         DOWN => MOVE_DOWN,
