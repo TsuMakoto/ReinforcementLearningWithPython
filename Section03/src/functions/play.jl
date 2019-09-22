@@ -18,7 +18,7 @@ play(agent::Agent;
 
   while !done
     selected = policy(state, agent.ϵ; r=policy_r, idx=policy_idx)
-    reward, done = transit(agent, selected, r=transit_r)
+    reward, done = transit(agent, selected; r=transit_r)
     push!(rewards, reward)
 
     state.toss_counts[selected.toss] += 1
