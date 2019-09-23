@@ -1,4 +1,3 @@
-export State
 mutable struct State
   toss_counts::Array{Int, 1}
   expected_values::Array{Float64, 1}

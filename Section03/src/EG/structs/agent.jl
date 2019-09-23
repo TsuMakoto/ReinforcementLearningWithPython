@@ -1,5 +1,3 @@
-export Agent
-
 mutable struct Agent
   max_episode_steps::Int
   game_count::Int
